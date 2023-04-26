@@ -3251,6 +3251,8 @@
 		-1 : "Random"
 		0 : "Bald Head"
 		1 : "Head with hair"
+		2 : "Black"
+		3 ' "Helmet"
 	]
 	suspicious(choices) : "Suspicious" : 0 =
 	[
