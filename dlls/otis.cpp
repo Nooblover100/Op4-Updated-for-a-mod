@@ -67,6 +67,8 @@ enum OtisHead
 	Random = -1,
 	Hair = 0,
 	Balding
+	Black
+	Helmet
 };
 }
 
@@ -460,7 +462,7 @@ void COtis::Spawn()
 	//Note: This originally didn't use SetBodygroup
 	if (m_iOtisHead == OtisHead::Random)
 	{
-		m_iOtisHead = RANDOM_LONG(0, 1);
+		m_iOtisHead = RANDOM_LONG(0, 3);
 	}
 
 	if (m_iOtisBody == OtisWeapon::Random)
