@@ -98,6 +98,16 @@ enum HGruntAllyHead
 	MilitaryPolice,
 	Commander,
 	BeretBlack,
+	Head09
+	Head10
+	Head11
+	Head12
+	Head13
+	Head14
+	Head15
+	Head16
+	Head17
+	Head18
 };
 }
 
@@ -106,9 +116,8 @@ namespace HGruntAllyTorso
 enum HGruntAllyTorso
 {
 	Normal = 0,
-	Saw,
-	Nothing,
-	Shotgun
+	Shotgun,
+	Saw
 };
 }
 
@@ -1229,10 +1238,6 @@ void CHGruntAlly::Spawn()
 	SetBodygroup(HGruntAllyBodygroup::Head, m_iGruntHead);
 	SetBodygroup(HGruntAllyBodygroup::Torso, m_iGruntTorso);
 	SetBodygroup(HGruntAllyBodygroup::Weapons, m_iWeaponIdx);
-
-	//TODO: probably also needs this for head HGruntAllyHead::BeretBlack
-	if (m_iGruntHead == HGruntAllyHead::OpsMask || m_iGruntHead == HGruntAllyHead::BandanaBlack)
-		m_voicePitch = 90;
 
 	pev->skin = 0;
 
