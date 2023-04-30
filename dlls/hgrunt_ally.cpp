@@ -1239,7 +1239,7 @@ void CHGruntAlly::Spawn()
 	SetBodygroup(HGruntAllyBodygroup::Torso, m_iGruntTorso);
 	SetBodygroup(HGruntAllyBodygroup::Weapons, m_iWeaponIdx);
 
-	pev->skin = 0;
+	pev->skin = RANDOM_LONG(0, 1);
 
 	m_iSawShell = PRECACHE_MODEL("models/saw_shell.mdl");
 	m_iSawLink = PRECACHE_MODEL("models/saw_link.mdl");
